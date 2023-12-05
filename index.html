@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Josh</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Joshua Ballesteros</h1>
+            <h2>tecnologo en Software </h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Soy Joshua Ballesteros.</span> un apasionado creador web con la misión de transformar ideas en experiencias cautivadoras en línea. Mi viaje en el diseño y desarrollo web ha sido un constante aprendizaje, impulsado por la búsqueda de la excelencia y la innovación.
+
+                En cada línea de código y cada pixel de diseño, busco fusionar funcionalidad y estética para dar vida a proyectos web únicos y memorables. Mi enfoque no solo se centra en la creación visualmente impactante, sino también en la usabilidad y la experiencia del usuario.
+                
+                Explora mi portafolio y descubre la diversidad de proyectos que he tenido el privilegio de desarrollar. Desde sitios web elegantes y minimalistas hasta aplicaciones interactivas, cada proyecto cuenta una historia única de colaboración y creatividad.
+                
+                Estoy emocionado de compartir contigo mi trayectoria y espero que encuentres inspiración en el trabajo que he realizado. Si estás listo para llevar tu presencia en línea al siguiente nivel, ¡hablemos y hagamos magia juntos!
+                
+                ¡Gracias por visitar mi espacio digital!
+                
+                Joshua Ballesteros</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06-09-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3156336323
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            linaballesteros247@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://github.com/balberyth
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                           Crr 9 # 16-27 san antonio
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>programador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC-IOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>MECANICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>EDICION</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>HABILIDADES TECNICAS</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>HABILIDADES PROFESIONALES </h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>BACHILLERATO</h4>
+                        <span class="casa">COLEGIO SAN JOSE DE GUANENTA</span>
+                        <span class="fecha">20013 - 2020</span>
+                        <p>Saludos, soy Joshua Ballesteros, y mi camino educativo se ha moldeado en las aulas del Colegio San José de Guanentá. Crecer en este ambiente de aprendizaje excepcional ha sido fundamental para mi desarrollo integral.
+
+                            El Colegio San José de Guanentá no solo me proporcionó conocimientos académicos sólidos, sino que también me inculcó valores que han guiado mi trayectoria. Aquí, aprendí la importancia de la dedicación, la ética y la colaboración, valores que sigo aplicando en cada proyecto que emprendo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>tecnico en sistemas</h4>
+                        <span class="casa">colegio san jose de guanenta</span>
+                        <span class="fecha">20017 - 2020</span>
+                        <p>Cada lección, cada desafío y cada logro en este colegio ha contribuido a mi crecimiento personal y profesional. Estoy agradecido por la sólida base que he adquirido aquí y ansío aplicar las lecciones aprendidas para seguir construyendo un futuro brillante.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>tegnologo en sistemas </h4>
+                        <span class="casa">institucion educativa SENA</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Mi experiencia en el SENA ha sido más que un programa educativo; ha sido una travesía de descubrimiento y crecimiento. Desde aprender los fundamentos de la programación hasta explorar las complejidades de los sistemas informáticos, cada día en el SENA ha sido una oportunidad para adquirir conocimientos prácticos y habilidades técnicas de vanguardia.
+
+                            El SENA no solo me ha proporcionado una educación de calidad, sino también una comunidad de mentores y compañeros apasionados que comparten mi amor por la tecnología. Estas conexiones y aprendizajes han sido fundamentales para mi desarrollo profesional y me han preparado para enfrentar los retos en el siempre cambiante campo de la informática.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>Durante mi etapa como Desarrollador Web, contribuí al diseño y desarrollo de varios proyectos, centrando mi atención en la usabilidad y la eficiencia del código. Colaboré de cerca con equipos para lograr soluciones web intuitivas y funcionales que cumplieran con los requisitos del cliente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Sistemas</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2020 - 2020</span>
+                        <p>Implementé ajustes discretos pero efectivos que optimizaron los procesos internos y promovieron un entorno más eficiente. Además, proporcioné capacitación técnica para mantener al equipo actualizado con las últimas tendencias</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Mi enfoque se centra en la gestión efectiva del equipo y en superar las expectativas del cliente sin perder de vista los detalles esenciales. Trabajo en la sombra para que los proyectos brillen en la luz.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+        
+       
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto"  onclick="navigateToProject('./pagina (quien soy yo)/index.html')"> 
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 1</h3>
+                        <p>Quien soy Yo</p>
+                    </div>
+                </div>
+                <div class="proyecto"  onclick="navigateToProject('./Factura/Factura.html')">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 2</h3>
+                        <p>Factura</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="navigateToProject('./calendario/calendario.html')"> 
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 3</h3>
+                        <p>calendario</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="navigateToProject('./form/ineeR.html')"> 
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 4</h3>
+                        <p>Formulario</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="navigateToProject('./compras/index.html')"> 
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 5 </h3>
+                        <p>presupuesto semanal </p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="navigateToProject('./carrito-de-compras-main/index.html')"> 
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 6</h3>
+                        <p>Carrito de compras</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="navigateToProject('./agenda/index.html')"> 
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>TRABAJO 7</h3>
+                        <p>agenda para perrros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                San Gil- Santander - san antonio
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llama : 3156336323
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: linaballesteros247@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

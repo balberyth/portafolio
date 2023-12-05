@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastos Semanales</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="mensaje"></div>
+        
+        <div id="divInicial">
+            <label for="presupuestoInicial">Ingrese el presupuesto inicial:</label>
+            <input type="number" id="presupuestoInicial" />
+            <button id="btnAceptar">Aceptar</button>
+        </div>
+        
+        <div id="formulario">
+        <div class="q">
+        <div class="title">Gestión de Gastos Semanales</div>
+
+        <div class="container">
+            <div class="progress-bar"></div>
+           
+            <div class="form-column">
+                <label for="nombreArticulo">Nombre del Artículo:</label>
+                <input type="text" id="nombreArticulo">
+    
+                <label for="precioArticulo">Precio del Artículo:</label>
+                <input type="number" id="precioArticulo" min="0">
+    
+                <button id="agregarBtn" onclick="agregarGasto()">Agregar</button>
+            </div>
+    
+            <div class="list-column">
+                <label for="presupuestoInicial">Presupuesto Inicial:</label>
+                <span id="presupuestoInicialLabel">$0</span>
+    
+                <label for="saldoRestante">Saldo Restante:</label>
+                <span id="saldoRestanteLabel" class="saldo-restante">$0</span>
+    
+                <div id="listaGastos"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <script src="./code.js"></script>
+    </body>
+    </html>

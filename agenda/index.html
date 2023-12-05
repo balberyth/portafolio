@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Refugio de Mascotas</title>
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li>
+            <a href="citasAG.html">CITAS AGENDADAS</a>
+            <ul id="agendadasList"></ul>
+              
+        </li>
+        <li><a href="citasCa.html">CITAS CANCELADAS</a>
+          <ul id="canceladasList"></ul>
+
+        </li>
+        <li><a href="#">Contacta</a>
+            <ul>
+                <li><a href="#" onclick="openBookingForm('gato')">Agendar Cita para Gato</a></li>
+                <li><a href="#" onclick="openBookingForm('perro')">Agendar Cita para Perro</a></li>
+                <li><a href="#" onclick="openBookingForm('otro')">Agendar Cita para Otro Animal</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="bookingForm" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeBookingForm()">&times;</span>
+        <h2>Agendar Cita</h2>
+        <form id="appointmentForm">
+            <label for="petType">Tipo de Animal:</label>
+            <input type="text" id="petType" name="petType" readonly/>
+
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required/>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required/>
+
+            <button type="button" onclick="saveAppointment()">Agendar Cita</button>
+        </form>
+    </div>
+</div>
+
+<div id="appointments" class="appointments-container"></div>
+
+<script src="./code.js"></script>
+</body>
+</html>
+

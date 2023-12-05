@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+footer {
+  text-align: right;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+.text-footer {
+  margin-right: 30px;
+
+}
+.content-section {
+  display: flex;
+  padding: 20px;
+  background-color: #fbf2ff;
+}
+
+.content-section img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+.content-section-text {
+  flex: 1;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.rounded-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.rounded-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+.leer-mas {
+  display: inline-block;
+  background-color: #943ce7;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fbf2ff;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.title-section {
+  text-align: center;
+  background-color: #8e44ad;
+  color: white;
+  padding: 10px 0;
+  font-size: 24px;
+}
+.container img {
+  max-width: 100px;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}

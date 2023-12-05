@@ -1,0 +1,259 @@
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  padding-top: 0%;
+
+}
+
+h1{
+  color: #00B8A9;
+}
+
+
+.contenedor2 {
+  display: flex;
+  
+}
+
+.parte1, .parte2, .tabla, .parte4 {
+  margin-bottom: 20px;
+}
+
+
+
+.sidebar {
+
+  width: 5%;
+  background: linear-gradient(to bottom, #23C0B1, #7ED59C);
+}
+
+.parte1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido {
+  
+  background-color: white;
+  width: 100%;
+  max-width: 100%; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.imagen {
+  margin-left: 10%;
+  height: 100px;
+
+}
+
+.titulo{
+color: #00B8A9;
+font-size: 50px;
+font-weight: bold;
+margin-right: 100px;
+margin-top: 100px;
+
+}
+
+.contenido_de_texto{
+  display: flex;
+  margin-left: -10px;
+  
+
+}
+
+.datos_1{
+  text-transform: uppercase;
+  color: #00b8a9;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-right: 25px;
+  display: inline-block;
+  width: 70px; 
+  
+}
+
+.rta p, .datos_1 p {
+  display: block;
+  margin: 0;
+}
+
+.parte2{
+  display: flex;
+  margin-left: 40px;
+  margin-top:110px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.metodo_p{
+  margin-top: 35px;
+  margin-right: 100px;
+}
+
+.t_metodo_p{
+  color: #00B8A9;
+}
+
+.palabras{
+  display: flex;
+}
+.neg{
+  font-weight: bold;
+}
+
+.tabla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_tabla{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 95%;
+}
+
+
+table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+thead {
+  background-color: #00B8A9;
+  color: white;
+
+  
+}
+
+table th {
+  width: 20em;
+
+}
+
+tr:nth-child(even) {
+  background-color: #E4E4E4;
+}
+
+
+.info_tabla th{
+  padding: 10px 5px;
+  font-size: 18px;
+  
+}
+
+.info_tabla td{
+  padding: 10px 5px;
+  text-align: center;
+  
+}
+
+.blanco{
+  background: white;
+}
+
+#total{   
+  font-weight: bold;
+  font-size: 19px;
+  padding-bottom: 35px;
+}
+
+#tota{   
+  font-weight: bold;
+  font-size: 19px;
+  padding-bottom: 35px;
+}
+
+.parte4{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;  
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 150px;
+}
+
+.thx{ 
+  font-size: 70px;
+  margin-right: 100px;
+  margin-left: 80px;
+
+}
+
+.quinta_parte{
+  display: flex;
+  text-align: center;
+}
+
+.linea {
+  border-color: #0ea89b;
+  border-top: 5px;
+  width: 1050px;
+  margin: 10px;
+  background-color: #0ea89b;
+  height: 4px;
+
+}
+
+
+
+#ta {
+
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .titulo {
+    font-size: 24px;
+  }
+
+  .parte1, .parte2, .parte4 {
+    margin: 10px;
+  }
+
+  .thx {
+    font-size: 24px;
+  }
+
+  .parte1, .parte2, .tabla, .parte4 {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .imagen{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_tabla tr {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

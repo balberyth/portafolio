@@ -1,0 +1,70 @@
+html:<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="./code.js"></script>
+  <title>Formulario</title>
+</head>
+<body>
+  <div class="container" onsubmit="submitForm(); return false;">
+    <form id="myForm">
+      <label for="firstName">Nombre:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Apellidos:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="docType">Tipo de documento:</label>
+      <select id="docType" name="docType" required>
+        <option value="dni">cedula de cidadania</option>
+        <option value="pasaporte">targeta de identidad</option>
+       
+      </select>
+
+      <label for="docNumber">Número de documento:</label>
+      <input type="text" id="docNumber" name="docNumber" required>
+
+      <label for="gender">Género:</label>
+      <select id="gender" name="gender" required>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="phone">Teléfono:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="birthdate">Fecha de nacimiento:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <input onclick="validacion()" type="submit" value="Enviar">
+
+    </form>
+  
+  </div>
+<div class="tabla">
+  <table class="tavla">
+    <thead>
+      <tr>
+        <td class="tabvla">Nombre</td>
+        <td class="tabvla">Apellidos</td>
+        <td class="tabvla">Tipo de documento</td>
+        <td class="tabvla">Número de documento</td>
+        <td class="tabvla">Género</td>
+        <td class="tabvla">Teléfono</td>
+        <td class="tabvla">Correo electrónico</td>   
+        <td class="tabvla">Fecha de nacimiento</td>
+        <td class="tabvla">Opciones</td> 
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+</body>
+</html>
